@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulado Estilizado - SimulaDoc</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+  </head>
+
+  <body>
+    <img
+      src="https://i.imgur.com/fyiYsag.png"
+      alt="SimulaDoc Logo"
+      class="logo"
+    />
+
+    <div id="uploadArea" class="upload-box">
+      <div class="upload-icon">📄</div>
+      <p>Arraste seu PDF aqui ou</p>
+      <label for="pdfInput" class="upload-button">Selecionar PDF</label>
+      <input type="file" id="pdfInput" accept="application/pdf" />
+    </div>
+
+    <button id="newSimuladoBtn">Iniciar Novo Simulado</button>
+
+    <div id="questions"></div>
+
+    <button id="checkResultsBtn">Verificar Rendimento</button>
+
+    <div id="results"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
