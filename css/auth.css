@@ -1,0 +1,338 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin: 0; /* Para remover margens padrão do body */
+}
+
+#espaco {
+  padding: 50px;
+}
+
+.teste {
+  font-size: 18px;
+}
+
+.info-box {
+  background-color: #f9f9f9;
+  border-left: 6px solid #3498db;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.info-box ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.info-box a {
+  color: #2980b9;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.example-image {
+  margin-top: 10px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.info-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #3498db;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: #2980b9;
+}
+
+.info-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #3498db;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: #2980b9;
+}
+
+h2 {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 50px;
+  max-width: 500%;
+  height: auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 50px;
+  max-width: 500%;
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+}
+
+.upload-box {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border: 2px dashed #d0d0d0;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+  transition: border 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #2980b9; /* Cor ajustada para corresponder ao JS */
+}
+
+.upload-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+.upload-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #2a80b9;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.question {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s;
+}
+
+.question.correct-border {
+  border-left: 5px solid #2ecc71;
+}
+
+.question.wrong-border {
+  border-left: 5px solid #e74c3c;
+}
+
+.question-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.option-group {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  transition: background 0.2s, border 0.2s;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option input[type="radio"] {
+  margin-right: 12px;
+}
+
+.correct {
+  background-color: #c8f7c5 !important;
+  border: 1px solid #2ecc71 !important;
+}
+
+.wrong {
+  background-color: #f7c5c5 !important;
+  border: 1px solid #e74c3c !important;
+}
+
+#checkResultsBtn,
+#newSimuladoBtn {
+  display: none; /* Serão mostrados via JS quando o PDF for carregado */
+  margin: 30px auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
+  color: white;
+  display: block; /* Para centralizar com margin auto */
+}
+
+#newSimuladoBtn {
+  margin-top: 0; /* Para não ter margem duplicada com o de cima */
+}
+
+#checkResultsBtn:hover,
+#newSimuladoBtn:hover {
+  background-color: #2a80b9;
+}
+
+#results {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 600px; /* Alinhado com a largura das perguntas */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: none; /* Escondido inicialmente, mostrado ao verificar resultados */
+}
+
+/* Estilos para o grid de resultados dentro de #results */
+#results h3 {
+  font-size: 36px;
+  margin: 0;
+  color: #333;
+}
+
+#results p {
+  margin: 4px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+#results p span {
+  font-weight: bold;
+}
+
+#results .grid-container {
+  /* Adicionei uma classe para o grid para não aplicar estilos genéricos demais */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 12px;
+  max-width: 400px;
+  margin: 20px auto 0;
+}
+
+#results .grid-box {
+  /* Adicionei uma classe para as caixas do grid */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #eee;
+  background-color: #fff;
+  color: #111;
+}
+
+#results .grid-box.correct {
+  background-color: #2ecc71;
+  color: #fff;
+  border-color: #2ecc71; /* Adicionado para consistência */
+}
+
+#results .grid-box.wrong {
+  background-color: #e74c3c;
+  color: #fff;
+  border-color: #e74c3c; /* Adicionado para consistência */
+}
+
+#results .grid-box.unanswered {
+  background-color: #f2f2f2;
+  color: #999;
+  border-color: #f2f2f2; /* Adicionado para consistência */
+}
+
+/* ... seu CSS existente ... */
+
+#checkResultsBtn,
+#newSimuladoBtn {
+  display: none; /* Isso garante que eles não aparecem no carregamento inicial */
+  margin: 30px auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
+  color: white;
+  display: block; /* Este 'display: block' pode ser removido, pois o JS irá controlar */
+}
+
+/* Remova o 'display: block;' extra da regra acima para evitar conflito */
+/* Ou mude para: */
+#checkResultsBtn,
+#newSimuladoBtn {
+  display: none; /* Inicia escondido */
+  margin: 30px auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
+  color: white;
+  /* Remover display: block; daqui. Ele será adicionado via JS quando necessário. */
+}
+
+#newSimuladoBtn {
+  margin-top: 0;
+}
+
+/* ... o resto do seu CSS ... */
